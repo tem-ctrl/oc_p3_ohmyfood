@@ -1,7 +1,6 @@
 # Projet: Dynamisez une page web avec des animations CSS
 
-<!-- <a href="https://tem-ctrl.github.io/oc_p3_ohmyfood/" target="_blank">Visiter le site</a> -->
-[Visiter le site](https://tem-ctrl.github.io/oc_p3_ohmyfood/){:target="_blank" rel="noopener"}
+<a href="https://tem-ctrl.github.io/oc_p3_ohmyfood/" target="_blank">Visiter le site</a>
 
 # Scénario
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
