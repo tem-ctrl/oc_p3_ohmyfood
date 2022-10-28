@@ -33,4 +33,4 @@ Voici <a href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/
 
 De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie <a href="https://course.oc-static.com/projects/DW_P3/Maquette+Ohmyfood.zip">les maquettes</a> du site.
 
-<figure><img src="./maquette/Maquettes Ohmyfood" alt="Aperçu des maquettes Ohmyfood"></figure>
+<figure><img src="./images/maquette/Maquettes Ohmyfood.jpg" alt="Aperçu des maquettes Ohmyfood"></figure>
