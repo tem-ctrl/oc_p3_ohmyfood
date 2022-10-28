@@ -1,0 +1,30 @@
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 2em 1.5em 3em;
+
+  &-text {
+    list-style-type: none;
+    padding-left: 0; 
+  }
+
+  &-logo {
+    height: 18px;
+    margin-bottom: 20px;
+  }
+  
+  &-entry {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  &-icon {
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+  }
+
+  &-link {
+    color: $color-white;
+  }
+}

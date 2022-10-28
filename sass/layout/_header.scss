@@ -1,0 +1,16 @@
+.header {
+  padding: 22px 0 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &-logo {
+    width: 45%;
+  }
+}
+
+.home-link {
+  position: absolute;
+  left: 30px;
+}

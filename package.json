@@ -1,0 +1,26 @@
+{
+  "name": "ohmyfood_website",
+  "version": "1.0.0",
+  "description": "Projet 3, Développeur Web Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./css/styles.css --watch --no-source-map --style expanded",
+    "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tem-ctrl/oc_p3_ohmyfood"
+  },
+  "keywords": [
+    "CSS",
+    "Sass",
+    "Animations"
+  ],
+  "author": "Gilbert Temgoua Donkoo",
+  "license": "ISC",
+  "browslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/tem-ctrl/oc_p3_ohmyfood/issues"
+  },
+  "homepage": "https://github.com/tem-ctrl/oc_p3_ohmyfood#readme"
+}

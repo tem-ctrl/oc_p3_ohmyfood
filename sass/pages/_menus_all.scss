@@ -1,0 +1,70 @@
+.menus {
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  bottom: 40px;
+  background-color: $color-white;
+  padding: 45px 15px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: #f7f7f7;
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  &-name {
+    font-family: 'Shrikhand', 'Sans Serif';
+  }
+
+  &-order {
+    width: 50%;
+    display: block;
+  }
+}
+
+.food-title-h2 {
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+
+.green-line {
+  width: 40px;
+  height: 4px;
+  background-color: #99e2d0;
+}
+
+.food-type {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recipe {
+  height: 70px;
+  background-color: $color-white;
+  border-radius: 20px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 8px 0px darken($color-light-gray, 10%);
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-price {
+    font-weight: bold;
+  }
+
+  &-text {
+    width: 75%;
+    overflow-x: hidden;
+  }
+}
+
+.main-menus {
+  background-color: #f7f7f7;
+}
