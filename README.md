@@ -11,7 +11,7 @@ le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, 
 <figure class="logo"><img class="logo-img" src="./images/logo/ohmyfood@2x.svg" width="500px" alt="Ohmyfood logo">
   <figcaption> ~~~~~~~~~~~~~~~~~ Logo de Ohmyfood ~~~~~~~~~~~~~~~~~~~</figcaption>
 </figure> <br>
-
+<br><br>
 
 Vous faites partie des 4 heureux élus qui ont la chance de travailler sur ce beau projet.
 
