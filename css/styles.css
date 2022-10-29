@@ -258,10 +258,13 @@ body {
   border-radius: 20px;
   padding: 16px 20px;
   box-shadow: 0 4px 8px 0px #d1d1d1;
+  display: flex;
+  justify-content: space-between;
 }
 .recipe-info {
   display: flex;
   justify-content: space-between;
+  width: 80%;
 }
 .recipe-price {
   font-weight: bold;
@@ -280,6 +283,17 @@ body {
   align-items: center;
   background-color: #99e2d0;
   color: #FFF;
+}
+.recipe-anim .icon {
+  font-size: 22px;
+}
+.recipe:hover {
+  display: flex;
+  justify-content: space-between;
+}
+.recipe:hover-anim {
+  display: block;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
 }
 
 .main-menus {

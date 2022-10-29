@@ -49,10 +49,13 @@
   border-radius: 20px;
   padding: 16px 20px;
   box-shadow: 0 4px 8px 0px darken($color-light-gray, 10%);
+  display: flex;
+  justify-content: space-between;
 
   &-info {
     display: flex;
     justify-content: space-between;
+    width: 80%;
   }
 
   &-price {
@@ -74,11 +77,22 @@
     align-items: center;
     background-color: #99e2d0;
     color: $color-white;
+    // display: none;
 
-    // & .icon {
-    //   background-color: $color-white;
-    //   color: #99e2d0;
-    // }
+    & .icon {
+      font-size: 22px;
+    }
+  }
+
+  &:hover {
+    display: flex;
+    justify-content: space-between;
+
+    > &-anim {
+      display: block;
+      transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
+    }
+
   }
 
 }
