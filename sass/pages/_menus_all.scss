@@ -65,6 +65,22 @@
     white-space: nowrap;
     overflow: hidden;
   }
+
+  &-anim {
+    width: 3.75em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    color: $color-white;
+
+    // & .icon {
+    //   background-color: $color-white;
+    //   color: #99e2d0;
+    // }
+  }
+
 }
 
 .main-menus {

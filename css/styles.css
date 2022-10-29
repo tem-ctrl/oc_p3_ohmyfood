@@ -272,6 +272,15 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
+.recipe-anim {
+  width: 3.75em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #FFF;
+}
 
 .main-menus {
   background-color: #f7f7f7;
