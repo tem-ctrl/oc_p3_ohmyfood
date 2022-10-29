@@ -266,9 +266,11 @@ body {
 .recipe-price {
   font-weight: bold;
 }
-.recipe-text {
+.recipe-text, .recipe-name {
   width: 75%;
-  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .main-menus {

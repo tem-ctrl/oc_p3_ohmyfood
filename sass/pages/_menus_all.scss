@@ -59,9 +59,11 @@
     font-weight: bold;
   }
 
-  &-text {
+  &-text, &-name {
     width: 75%;
-    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
