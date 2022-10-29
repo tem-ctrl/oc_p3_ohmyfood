@@ -243,7 +243,7 @@ body {
 .green-line {
   width: 40px;
   height: 4px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 
 .food-type {
@@ -256,21 +256,25 @@ body {
   height: 70px;
   background-color: #FFF;
   border-radius: 20px;
-  padding: 16px 20px;
   box-shadow: 0 4px 8px 0px #d1d1d1;
   display: flex;
-  justify-content: space-between;
+  gap: 22px;
+}
+.recipe-desc {
+  margin: 16px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .recipe-info {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  gap: 1em;
 }
 .recipe-price {
   font-weight: bold;
 }
 .recipe-text, .recipe-name {
-  width: 75%;
+  max-width: 80%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -281,15 +285,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #FFF;
+  border-radius: 0 20px 20px 0;
 }
 .recipe-anim .icon {
   font-size: 22px;
 }
 .recipe:hover {
   display: flex;
-  justify-content: space-between;
+  column-gap: 22px;
 }
 .recipe:hover-anim {
   display: block;

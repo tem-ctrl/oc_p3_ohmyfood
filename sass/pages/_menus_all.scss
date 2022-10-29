@@ -34,7 +34,7 @@
 .green-line {
   width: 40px;
   height: 4px;
-  background-color: #99e2d0;
+  background-color: $color-tertiary;
 }
 
 .food-type {
@@ -47,15 +47,21 @@
   height: 70px;
   background-color: $color-white;
   border-radius: 20px;
-  padding: 16px 20px;
   box-shadow: 0 4px 8px 0px darken($color-light-gray, 10%);
   display: flex;
-  justify-content: space-between;
+  gap: 22px;
+
+  &-desc {
+    margin: 16px 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 
   &-info {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    gap: 1em;
+    // width: 80%;
   }
 
   &-price {
@@ -63,7 +69,7 @@
   }
 
   &-text, &-name {
-    width: 75%;
+    max-width: 80%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -75,8 +81,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #99e2d0;
+    background-color: $color-tertiary;
     color: $color-white;
+    border-radius: 0 20px 20px 0;
     // display: none;
 
     & .icon {
@@ -86,7 +93,7 @@
 
   &:hover {
     display: flex;
-    justify-content: space-between;
+    column-gap: 22px;
 
     > &-anim {
       display: block;
