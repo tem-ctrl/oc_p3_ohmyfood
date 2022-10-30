@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .link{
   text-decoration: none;
   color: $color-black;

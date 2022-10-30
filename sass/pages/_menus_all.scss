@@ -44,62 +44,71 @@
 }
 
 .recipe {
+  position: relative;
   height: 70px;
   background-color: $color-white;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0px darken($color-light-gray, 10%);
-  display: flex;
-  gap: 22px;
-
-  &-desc {
-    margin: 16px 20px;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
-  &-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-    // width: 80%;
-  }
+  box-shadow: 0 0 8px 2px darken($color-light-gray, 10%);
+  cursor: pointer;
+  overflow: hidden;
+  padding: 15px 12px;
 
   &-price {
     font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
   }
 
   &-text, &-name {
-    max-width: 80%;
+    width: 80%;
+    font-size: 16px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 
+  &-text {
+    width: 75%;
+    margin-top: 5px;
+  }
+
   &-anim {
-    width: 3.75em;
+    position: absolute;
+    right: -55px;
+    top: 0px;
+    width: 55px;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $color-tertiary;
     color: $color-white;
     border-radius: 0 20px 20px 0;
-    // display: none;
+    transition: transform 0.2s ease-in-out;
 
     & .icon {
       font-size: 22px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-360deg);
+      transition: transform 0.5s ease-in-out;
+      color: $color-white;
     }
   }
 
   &:hover {
-    display: flex;
-    column-gap: 22px;
-
-    > &-anim {
-      display: block;
-      transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
+    & .recipe-anim .icon {
+      transform: translate(-50%,-50%) rotate(0deg);
     }
 
+    & .recipe-anim, & .recipe-price {
+      transform: translate(-55px);
+    }
+
+    & .recipe-name, & .recipe-text {
+      width: calc(100% - 110px);
+    }
   }
 
 }

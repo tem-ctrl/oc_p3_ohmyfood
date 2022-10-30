@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .link {
   text-decoration: none;
   color: #353535;
@@ -253,52 +257,62 @@ body {
 }
 
 .recipe {
+  position: relative;
   height: 70px;
   background-color: #FFF;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0px #d1d1d1;
-  display: flex;
-  gap: 22px;
-}
-.recipe-desc {
-  margin: 16px 20px;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-.recipe-info {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
+  box-shadow: 0 0 8px 2px #d1d1d1;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 15px 12px;
 }
 .recipe-price {
   font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
 }
 .recipe-text, .recipe-name {
-  max-width: 80%;
+  width: 80%;
+  font-size: 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
+.recipe-text {
+  width: 75%;
+  margin-top: 5px;
+}
 .recipe-anim {
-  width: 3.75em;
+  position: absolute;
+  right: -55px;
+  top: 0px;
+  width: 55px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #99E2D0;
   color: #FFF;
   border-radius: 0 20px 20px 0;
+  transition: transform 0.2s ease-in-out;
 }
 .recipe-anim .icon {
   font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-360deg);
+  transition: transform 0.5s ease-in-out;
+  color: #FFF;
 }
-.recipe:hover {
-  display: flex;
-  column-gap: 22px;
+.recipe:hover .recipe-anim .icon {
+  transform: translate(-50%, -50%) rotate(0deg);
 }
-.recipe:hover-anim {
-  display: block;
-  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
+.recipe:hover .recipe-anim, .recipe:hover .recipe-price {
+  transform: translate(-55px);
+}
+.recipe:hover .recipe-name, .recipe:hover .recipe-text {
+  width: calc(100% - 110px);
 }
 
 .main-menus {
