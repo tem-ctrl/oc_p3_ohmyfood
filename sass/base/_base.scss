@@ -1,4 +1,4 @@
-* {
+*, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,85 +25,6 @@ body {
   display: none;
 }
 
-.location {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  background-color: $color-light-gray;
-  align-items: center;
-  height: 50px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 .fa-lg {
   font-size: 18px;
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  margin: 42px auto 110px;
-  text-align: center;
-
-  &-btn {
-    margin-top: 10px;
-
-    &-link {
-      color: $color-white;
-    }
-  }
-}
-
-.restaus {
-  background-color: rgb(247,247,247);
-  padding: 64px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.restau-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.restau {
-  position: relative;
-  &-link {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px 0px $color-light-gray;
-  }
-
-  &-img {
-    width: 100%;
-    height: 180px;
-    border-radius: 25px 25px 0 0;
-  }
-
-  &-new {
-    padding: 2px 5px;
-    background-color: #99e2d0;
-    color: #1b6150;
-    position: absolute;
-    width: fit-content;
-    font-size: 10px;
-    font-weight: bold;
-    top: 30px;
-    left: 80%;
-  }
-
-  &-body {
-    padding: 20px 25px 20px 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
 }

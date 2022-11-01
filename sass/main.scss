@@ -2,11 +2,15 @@
 @import "./base/base";
 @import "./base/typography";
 @import "./layout/header";
+@import "./layout/location";
 @import "./layout/banner";
+@import "./layout/main_title";
 @import "./layout/nav";
+@import "./layout/restaurants";
 @import "./components/button";
+@import "./components/restau_card";
+@import "./components/restau_heart";
 @import "./pages/menus_all";
 @import "./utils/animations";
 @import "./layout/footer";
-
 

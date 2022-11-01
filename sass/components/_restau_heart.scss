@@ -1,0 +1,71 @@
+// .restau-heart {
+//   position: relative;
+//   width: 40px;
+//   height: 40px;
+//   font-size: 25px;
+//   cursor: pointer;
+
+//   &-empty {
+//     z-index: 2;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+
+//   &-full {
+//     z-index: 1;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: scale(0);
+//     transition: all 0.8s ease-in;
+//     background: linear-gradient(170deg, $color-secondary, $color-primary);
+//     background-clip: text;
+//     color: transparent;
+//   }
+
+//   &:hover {
+//     .restau-heart-full {
+//       transform: translate(0, -100%) scale(1);
+//     }
+//   }
+// }
+
+
+.restau-heart {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  cursor: pointer;
+
+  &-empty {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background: linear-gradient(170deg, $color-secondary, $color-primary);
+  }
+
+  &-full {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: all 0.8s ease-in;
+    background: linear-gradient(170deg, $color-secondary, $color-primary);
+    // background-clip: text;
+    // background-repeat: repeat;
+    color: transparent;
+  }
+
+  &:hover {
+    .restau-heart-full {
+      transform: translate(-50%, -50%) scale(1);
+      // color: red;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   padding: 0 1em;
   height: 50px;
   border-radius: 25px;
-  background: linear-gradient($color-secondary, $color-primary);
+  background: linear-gradient(0.48turn, $color-secondary, $color-primary);
   box-shadow: 0 4px 8px 0px $color-light-gray;
   display: flex;
   align-items: center;
@@ -10,10 +10,10 @@
   align-self: center;
   color: $color-white;
   border: none;
-  // width: 50%;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 4px 8px 0px darken($color-light-gray, 10%);
+    box-shadow: 0 8px 16px 0px darken($color-light-gray, 10%);
+    background: linear-gradient(0.48turn, lighten($color-secondary, 5%), lighten($color-primary, 5%));
   }
 }

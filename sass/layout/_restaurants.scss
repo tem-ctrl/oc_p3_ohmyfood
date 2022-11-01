@@ -1,0 +1,13 @@
+.restaus {
+  background-color: rgb(247, 247, 247);
+  padding: 64px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}

@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 42px auto 110px;
+  text-align: center;
+
+  &-btn {
+    margin-top: 10px;
+
+    &-link {
+      color: $color-white;
+    }
+  }
+}
