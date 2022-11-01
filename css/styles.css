@@ -239,15 +239,13 @@ body {
   z-index: 2;
   position: relative;
   left: 50%;
-  border: 1px solid red;
 }
 .restau-heart-full {
   z-index: 1;
   position: relative;
   right: 50%;
-  border: 2px solid green;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: transparent;
+  display: none;
 }
 .restau-heart:hover .restau-heart-full {
   transform: translate(0, 0) scale(1);
