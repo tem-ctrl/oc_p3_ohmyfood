@@ -219,16 +219,7 @@ body {
   align-items: center;
 }
 
-.fa-heart {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
 .restau-heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   width: 40px;
   height: 40px;
@@ -237,18 +228,25 @@ body {
 }
 .restau-heart-empty {
   z-index: 2;
-  position: relative;
+  position: absolute;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .restau-heart-full {
   z-index: 1;
-  position: relative;
-  right: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: all 0.8s ease-in;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-  display: none;
 }
 .restau-heart:hover .restau-heart-full {
-  transform: translate(0, 0) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .menus {
