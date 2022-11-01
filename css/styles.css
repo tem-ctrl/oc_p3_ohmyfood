@@ -30,6 +30,10 @@ body {
   display: block;
 }
 
+.food-type {
+  opacity: 0;
+}
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
 }
@@ -461,7 +465,6 @@ body {
 @keyframes come-in {
   from {
     opacity: 0;
-    transform: translateY(0);
   }
   to {
     opacity: 1;
