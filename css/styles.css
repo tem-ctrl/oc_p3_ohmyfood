@@ -27,6 +27,7 @@ body {
 
 .fa-lg {
   font-size: 18px;
+  display: block;
 }
 
 body {
@@ -213,11 +214,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.restau-heart-full {
-  display: none;
+
+.fa-heart {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 
 .restau-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 40px;
   height: 40px;
@@ -226,23 +233,20 @@ body {
 }
 .restau-heart-empty {
   z-index: 2;
-  position: absolute;
-  top: 50%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  border: 1px solid red;
 }
 .restau-heart-full {
   z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) scale(0);
-  transition: all 0.8s ease-in;
+  position: relative;
+  right: 50%;
+  border: 2px solid green;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: transparent;
 }
 .restau-heart:hover .restau-heart-full {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(0, 0) scale(1);
 }
 
 .menus {
@@ -350,6 +354,30 @@ body {
   background-color: #f7f7f7;
 }
 
+.foot-type-1 {
+  animation-name: come-in;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
+}
+
+.foot-type-2 {
+  animation-name: come-in;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+}
+
+.foot-type-3 {
+  animation-name: come-in;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3000ms;
+}
+
 .restaurant-loader {
   width: 200px;
   height: 200px;
@@ -428,6 +456,16 @@ body {
   }
   100% {
     transform: rotate(359deg);
+  }
+}
+@keyframes come-in {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-10px);
   }
 }
 .footer {

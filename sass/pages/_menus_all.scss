@@ -116,3 +116,14 @@
 .main-menus {
   background-color: #f7f7f7;
 }
+
+@for $i from 1 through 3 {
+  .foot-type-#{$i} {
+    animation-name: come-in;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: calc($i * 1000ms);
+  }
+}
+
