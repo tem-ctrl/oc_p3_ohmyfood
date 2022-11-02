@@ -4,9 +4,7 @@
   bottom: 40px;
   background-color: $color-white;
   padding: 45px 15px 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
+  @include column-flex(35px);
   background-color: #f7f7f7;
 
   &-title {
@@ -38,9 +36,7 @@
 }
 
 .food-type {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  @include column-flex(15px);
 }
 
 .recipe {
@@ -58,8 +54,7 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
-    font-weight: bold;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out;
   }
 
   &-text, &-name {
@@ -84,10 +79,11 @@
     background-color: $color-tertiary;
     color: $color-white;
     border-radius: 0 20px 20px 0;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 
     & .icon {
-      font-size: 22px;
+      font-size: 25px;
+      font-weight: bold;
       position: absolute;
       top: 50%;
       left: 50%;

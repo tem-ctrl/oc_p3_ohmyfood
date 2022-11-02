@@ -1,11 +1,17 @@
 .title {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  @include column-flex(20px);
   align-items: center;
   justify-content: center;
   margin: 42px auto 110px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+
+    br {
+      display: none;
+    }
+    }
 
   &-btn {
     margin-top: 10px;

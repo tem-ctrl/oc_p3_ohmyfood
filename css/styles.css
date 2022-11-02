@@ -105,11 +105,19 @@ body {
 .title {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  row-gap: 20px;
   align-items: center;
   justify-content: center;
   margin: 42px auto 110px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .title br {
+    display: none;
+  }
 }
 .title-btn {
   margin-top: 10px;
@@ -297,7 +305,7 @@ body {
   padding: 45px 15px 5px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  row-gap: 35px;
   background-color: #f7f7f7;
 }
 .menus-title {
@@ -328,7 +336,7 @@ body {
 .food-type {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  row-gap: 15px;
 }
 
 .recipe {
@@ -346,8 +354,7 @@ body {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  font-weight: bold;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .recipe-text, .recipe-name {
   width: 80%;
@@ -369,10 +376,11 @@ body {
   background-color: #99E2D0;
   color: #FFF;
   border-radius: 0 20px 20px 0;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .recipe-anim .icon {
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
