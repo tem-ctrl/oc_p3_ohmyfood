@@ -1,9 +1,12 @@
 .restau {
   position: relative;
 
+  @media screen and (min-width: 768px) {
+      width: 25%;
+    }
+
   &-link {
-    display: flex;
-    flex-direction: column;
+    @include column-flex(0px);
     border-radius: 20px;
     box-shadow: 0 8px 16px 0px $color-light-gray;
   }

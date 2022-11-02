@@ -5,8 +5,16 @@
   align-items: center;
   position: relative;
 
+  @media screen and (min-width: 768px) {
+      padding: 32px 0;
+    }
+
   &-logo {
     width: 45%;
+
+  @media screen and (min-width: 768px) {
+      width: 30%;
+    }
   }
 }
 

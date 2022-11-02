@@ -1,15 +1,16 @@
 .nav {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  @include column-flex(30px);
   margin: 64px 20px;
   cursor: pointer;
 
   &-ol {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+    @include column-flex(22px);
     list-style-type: none;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &-link {
@@ -19,6 +20,9 @@
     justify-content: flex-start;
     align-items: center;
     height: 5em;
+    @media screen and (min-width: 768px) {
+        width: 33%;
+      }
 
     &-div {
       display: flex;

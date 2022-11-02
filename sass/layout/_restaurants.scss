@@ -1,13 +1,15 @@
 .restaus {
   background-color: rgb(247, 247, 247);
   padding: 64px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  @include column-flex(24px);
+  // gap: 24px;
 
   &-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    @include column-flex(30px);
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 }
