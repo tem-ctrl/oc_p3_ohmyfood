@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
@@ -444,7 +445,7 @@ body {
 .food-type {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 18ùpx;
   justify-content: flex-start;
   align-items: stretch;
 }
