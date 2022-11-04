@@ -3,6 +3,8 @@
   display: flex;
   @if ($direction != row){
     flex-direction: column;
+  } @else {
+    flex-direction: row;
   }
   @if ($gap != 0) {
     gap: $gap;
@@ -14,4 +16,10 @@
 // Make transition
 @mixin transit ($prop: transform, $duration: 0.5s, $timing: ease-in-out) {
   transition: $prop $duration $timing;
+}
+
+// Center titles "Restaurants" and "Fonctionnement" on tablets and desktops
+@mixin center-title {
+  align-self: center;
+  font-size: 26px;
 }

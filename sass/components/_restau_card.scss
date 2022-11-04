@@ -1,13 +1,6 @@
 .restau {
   position: relative;
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-      width: 47.5%;
-    }
-  @media screen and (min-width: 992px) {
-    width: 25%;
-  }
-
   &-link {
     @include flex-disp($direction: column);
     border-radius: 20px;
@@ -21,19 +14,36 @@
   }
 
   &-new {
-    padding: 2px 5px;
+    padding: 5px 12px;
     background-color: #99e2d0;
     color: #1b6150;
     position: absolute;
     width: fit-content;
     font-size: 10px;
     font-weight: bold;
-    top: 30px;
-    left: 80%;
+    top: 15px;
+    right: 15px;
   }
 
   &-body {
     padding: 20px 25px 20px 14px;
     @include flex-disp($justify-content: space-between, $align-items: center);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    width: 47.5%;
+
+    &-new {
+      // padding: 3px 6px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 25%;
+    &-new {
+      // padding: 3px 6px;
+      font-size: 14px;
+    }
   }
 }

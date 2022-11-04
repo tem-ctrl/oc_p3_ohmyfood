@@ -1,9 +1,9 @@
 .button {
-  padding: 0 1em;
+  padding: 0 1.5em;
   height: 50px;
   border-radius: 25px;
   background: linear-gradient(0.48turn, $color-secondary, $color-primary);
-  box-shadow: 0 4px 8px 0px $color-light-gray;
+  box-shadow: 0 8px 16px 0px $color-light-gray;
   @include flex-disp($justify-content: center, $align-items: center);
   align-self: center;
   color: $color-white;
@@ -11,7 +11,12 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 8px 16px 0px darken($color-light-gray, 10%);
+    box-shadow: 0 8px 16px 0px darken($color-light-gray, 15%);
     background: linear-gradient(0.48turn, lighten($color-secondary, 5%), lighten($color-primary, 5%));
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    border-radius: 40px;
   }
 }

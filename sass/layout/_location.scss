@@ -6,8 +6,10 @@
   font-weight: bold;
 
   @media screen and (min-width: 768px) {
-    height: 100px;
+    height: 75px;
     font-size: 20px;
+    font-weight: 600;
     color: $color-black;
+    background-color: lighten($color-light-gray, 7%);
   }
 }
