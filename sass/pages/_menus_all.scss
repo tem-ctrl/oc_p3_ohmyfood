@@ -41,7 +41,7 @@
 }
 
 .food-type {
-  @include flex-disp($direction: column, $gap: 15px);
+  @include flex-disp($direction: column, $gap: 18px);
 }
 
 .recipe {

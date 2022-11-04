@@ -444,7 +444,7 @@ body {
 .food-type {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
   justify-content: flex-start;
   align-items: stretch;
 }
