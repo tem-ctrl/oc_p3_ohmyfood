@@ -1,15 +1,21 @@
 .restaus {
   background-color: rgb(247, 247, 247);
   padding: 64px 20px;
-  @include column-flex(24px);
-  // gap: 24px;
+  @include flex-disp($direction: column, $gap: 24px);
 
   &-cards {
-    @include column-flex(30px);
+    @include flex-disp($direction: column, $gap: 30px);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
       flex-direction: row;
-      gap: 32px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      // flex: row wrap;
+      // gap: 32px;
     }
   }
 }

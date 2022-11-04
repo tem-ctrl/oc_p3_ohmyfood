@@ -1,8 +1,6 @@
 .header {
   padding: 22px 0 15px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-disp(row, center, center, 0);
   position: relative;
 
   @media screen and (min-width: 768px) {

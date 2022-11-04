@@ -4,13 +4,11 @@
   bottom: 40px;
   background-color: $color-white;
   padding: 45px 15px 5px;
-  @include column-flex(35px);
+  @include flex-disp($direction: column, $gap: 35px);
   background-color: #f7f7f7;
 
   &-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-disp(row, space-between, center, 0);
     padding-right: 20px;
   }
 
@@ -36,7 +34,7 @@
 }
 
 .food-type {
-  @include column-flex(15px);
+  @include flex-disp($direction: column, $gap: 15px);
 }
 
 .recipe {
@@ -79,7 +77,7 @@
     background-color: $color-tertiary;
     color: $color-white;
     border-radius: 0 20px 20px 0;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 
     & .icon {
       font-size: 25px;
@@ -88,7 +86,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(-360deg);
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.8s ease-in-out;
       color: $color-white;
     }
   }
@@ -115,11 +113,8 @@
 
 @for $i from 1 through 3 {
   .foot-type-#{$i} {
-    animation-name: come-in;
-    animation-duration: 1000ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-delay: calc($i * 1000ms);
+    // animation: name duration timing-function fill-mode delay
+    animation: come-in 0.8s ease-in-out forwards calc($i * 1.2s);
   }
 }
 

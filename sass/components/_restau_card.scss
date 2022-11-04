@@ -1,12 +1,15 @@
 .restau {
   position: relative;
 
-  @media screen and (min-width: 768px) {
-      width: 25%;
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+      width: 47.5%;
     }
+  @media screen and (min-width: 992px) {
+    width: 25%;
+  }
 
   &-link {
-    @include column-flex(0px);
+    @include flex-disp($direction: column);
     border-radius: 20px;
     box-shadow: 0 8px 16px 0px $color-light-gray;
   }
@@ -31,8 +34,6 @@
 
   &-body {
     padding: 20px 25px 20px 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-disp($justify-content: space-between, $align-items: center);
   }
 }

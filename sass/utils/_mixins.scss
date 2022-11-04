@@ -1,7 +1,17 @@
-// Mixins
-// Display vertically with flexbox
-@mixin column-flex($gap: 10px) {
+// Customize flex display
+@mixin flex-disp ($direction: row, $justify-content: flex-start, $align-items: stretch, $gap: 0px) {
   display: flex;
-  flex-direction: column;
-  row-gap: $gap;
+  @if ($direction != row){
+    flex-direction: column;
+  }
+  @if ($gap != 0) {
+    gap: $gap;
+  }
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+// Make transition
+@mixin transit ($prop: transform, $duration: 0.5s, $timing: ease-in-out) {
+  transition: $prop $duration $timing;
 }

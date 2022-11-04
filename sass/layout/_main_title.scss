@@ -1,7 +1,5 @@
 .title {
-  @include column-flex(20px);
-  align-items: center;
-  justify-content: center;
+  @include flex-disp(column, center, center, 20px);
   margin: 42px auto 110px;
   text-align: center;
 
@@ -11,7 +9,7 @@
     br {
       display: none;
     }
-    }
+  }
 
   &-btn {
     margin-top: 10px;

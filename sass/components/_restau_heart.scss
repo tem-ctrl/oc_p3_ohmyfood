@@ -11,6 +11,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.8s ease-in;
   }
 
   &-full {
@@ -26,7 +28,13 @@
     color: transparent;
   }
 
-  &:hover .restau-heart-full {
-    transform: translate(-50%, -50%) scale(1);
+  &:hover {
+    .restau-heart-full {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .restau-heart-empty {
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
   }
 }

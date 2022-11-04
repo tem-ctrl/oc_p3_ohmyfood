@@ -1,9 +1,6 @@
 .location {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  @include flex-disp(row, center, center, 20px);
   background-color: $color-light-gray;
-  align-items: center;
   height: 50px;
   font-size: 14px;
   font-weight: bold;

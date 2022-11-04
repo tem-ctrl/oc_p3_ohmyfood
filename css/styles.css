@@ -80,8 +80,8 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
-  background-color: #eaeaea;
   align-items: center;
+  background-color: #eaeaea;
   height: 50px;
   font-size: 14px;
   font-weight: bold;
@@ -105,9 +105,9 @@ body {
 .title {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
-  align-items: center;
+  gap: 20px;
   justify-content: center;
+  align-items: center;
   margin: 42px auto 110px;
   text-align: center;
 }
@@ -129,14 +129,18 @@ body {
 .nav {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: stretch;
   margin: 64px 20px;
   cursor: pointer;
 }
 .nav-ol {
   display: flex;
   flex-direction: column;
-  row-gap: 22px;
+  gap: 22px;
+  justify-content: flex-start;
+  align-items: stretch;
   list-style-type: none;
 }
 @media screen and (min-width: 768px) {
@@ -148,9 +152,9 @@ body {
 .nav-link {
   display: flex;
   gap: 0px;
-  width: 100%;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   height: 5em;
 }
 @media screen and (min-width: 768px) {
@@ -160,10 +164,10 @@ body {
 }
 .nav-link-div {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 38px;
   gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 38px;
   width: 100%;
   height: 100%;
   background-color: #f7f7f7;
@@ -182,9 +186,10 @@ body {
 .nav-link-mark {
   width: 28px;
   height: 26px;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  gap: 0px;
   justify-content: center;
+  align-items: center;
   background-color: #9356DC;
   border-radius: 50%;
   color: #FFF;
@@ -196,17 +201,28 @@ body {
   padding: 64px 20px;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .restaus-cards {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .restaus-cards {
     flex-direction: row;
-    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaus-cards {
+    flex-direction: row;
   }
 }
 
@@ -217,8 +233,9 @@ body {
   background: linear-gradient(0.48turn, #FF79DA, #9356DC);
   box-shadow: 0 4px 8px 0px #eaeaea;
   display: flex;
-  align-items: center;
+  gap: 0px;
   justify-content: center;
+  align-items: center;
   align-self: center;
   color: #FFF;
   border: none;
@@ -232,7 +249,12 @@ body {
 .restau {
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restau {
+    width: 47.5%;
+  }
+}
+@media screen and (min-width: 992px) {
   .restau {
     width: 25%;
   }
@@ -240,7 +262,9 @@ body {
 .restau-link {
   display: flex;
   flex-direction: column;
-  row-gap: 0px;
+  gap: 0px;
+  justify-content: flex-start;
+  align-items: stretch;
   border-radius: 20px;
   box-shadow: 0 8px 16px 0px #eaeaea;
 }
@@ -263,6 +287,7 @@ body {
 .restau-body {
   padding: 20px 25px 20px 14px;
   display: flex;
+  gap: 0px;
   justify-content: space-between;
   align-items: center;
 }
@@ -280,6 +305,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.8s ease-in;
 }
 .restau-heart-full {
   z-index: 1;
@@ -296,6 +323,10 @@ body {
 .restau-heart:hover .restau-heart-full {
   transform: translate(-50%, -50%) scale(1);
 }
+.restau-heart:hover .restau-heart-empty {
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
 
 .menus {
   border-radius: 40px 40px 0 0;
@@ -305,7 +336,9 @@ body {
   padding: 45px 15px 5px;
   display: flex;
   flex-direction: column;
-  row-gap: 35px;
+  gap: 35px;
+  justify-content: flex-start;
+  align-items: stretch;
   background-color: #f7f7f7;
 }
 .menus-title {
@@ -336,7 +369,9 @@ body {
 .food-type {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .recipe {
@@ -376,7 +411,7 @@ body {
   background-color: #99E2D0;
   color: #FFF;
   border-radius: 0 20px 20px 0;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 .recipe-anim .icon {
   font-size: 25px;
@@ -385,7 +420,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
   color: #FFF;
 }
 .recipe:hover .recipe-anim .icon {
@@ -403,27 +438,15 @@ body {
 }
 
 .foot-type-1 {
-  animation-name: come-in;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1000ms;
+  animation: come-in 0.8s ease-in-out forwards 1.2s;
 }
 
 .foot-type-2 {
-  animation-name: come-in;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2000ms;
+  animation: come-in 0.8s ease-in-out forwards 2.4s;
 }
 
 .foot-type-3 {
-  animation-name: come-in;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 3000ms;
+  animation: come-in 0.8s ease-in-out forwards 3.6s;
 }
 
 .restaurant-loader {
