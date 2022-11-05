@@ -46,12 +46,17 @@ body {
   font-size: 18px;
 }
 
+.h3 {
+  font-size: 16px;
+}
+
 /*
 * Layout
 */
 .location {
   font-size: 14px;
   font-weight: bold;
+  color: #626262;
 }
 @media screen and (min-width: 768px) {
   .location {
@@ -63,6 +68,11 @@ body {
 .title {
   text-align: center;
 }
+.title-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #626262;
+}
 @media screen and (min-width: 768px) {
   .title {
     font-size: 24px;
@@ -73,13 +83,17 @@ body {
   }
   .title-text {
     font-size: 20px;
-    font-weight: 200;
-    color: #7E7E7E;
   }
 }
 
-.nav:hover .nav-icon {
-  color: #9356DC;
+.nav-link:hover .nav-icon {
+  color: #9356dc;
+}
+.nav-title {
+  font-size: 22px;
+}
+.nav-text {
+  font-size: 16px;
 }
 .nav-link-mark {
   color: #FFF;
@@ -88,6 +102,10 @@ body {
   .nav-link, .nav-link-mark {
     font-size: 16px;
   }
+}
+
+.restaus-title {
+  font-size: 22px;
 }
 
 .restau-new {
@@ -104,6 +122,9 @@ body {
 .footer-text {
   font-size: 14px;
 }
+.footer-icon {
+  font-size: 12px;
+}
 .footer, .footer-link {
   color: #FFF;
 }
@@ -118,7 +139,57 @@ body {
 */
 .button, .button-link {
   color: #FFF;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.restau-loc {
+  font-weight: 300;
+}
+
+.restau-heart {
+  font-size: 25px;
+}
+.restau-heart-full {
+  color: transparent;
+}
+
+/* 
+* Pages
+*/
+.menu-name {
+  font-family: "Shrikhand", "Sans Serif";
+}
+@media screen and (min-width: 768px) {
+  .menu-name {
+    font-size: 30px;
+  }
+}
+
+.food-title-h2 {
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+
+.recipe-price {
+  font-weight: bold;
+}
+.recipe-text {
+  font-weight: 300;
+  columns: #353535;
+}
+.recipe-text, .recipe-name {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.recipe-anim {
+  color: #FFF;
+}
+.recipe-anim .icon {
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFF;
 }
 
 .header {
@@ -144,7 +215,7 @@ body {
 }
 .home-link:hover {
   transform: scale(1.3);
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .location {
@@ -153,8 +224,8 @@ body {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  background-color: #d0d0d0;
   height: 50px;
+  background: linear-gradient(0turn, #eaeaea 90%, #c9c9c9);
 }
 @media screen and (min-width: 768px) {
   .location {
@@ -171,6 +242,12 @@ body {
   width: 100%;
   height: 260px;
 }
+@media screen and (min-width: 768px) {
+  .banner-img {
+    height: 320px;
+    object-fit: cover;
+  }
+}
 
 .title {
   display: flex;
@@ -178,11 +255,12 @@ body {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin: 42px auto 110px;
+  padding: 42px 0 110px;
+  background-color: #f7f7f7;
 }
 @media screen and (min-width: 768px) {
   .title {
-    margin: 50px auto 75px;
+    padding: 50px 0 75px;
     gap: 20px;
   }
   .title br {
@@ -196,7 +274,7 @@ body {
   gap: 30px;
   justify-content: flex-start;
   align-items: stretch;
-  margin: 64px 20px;
+  margin: 64px 25px;
 }
 .nav-ol {
   display: flex;
@@ -227,7 +305,7 @@ body {
   height: 100%;
   background-color: #f7f7f7;
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0px #d0d0d0;
+  box-shadow: 0 4px 8px 0px rgb(208, 208, 208);
   position: relative;
   right: 14px;
 }
@@ -243,7 +321,7 @@ body {
   gap: 0px;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
   z-index: 10;
 }
@@ -270,6 +348,8 @@ body {
     gap: 20px;
     justify-content: space-between;
     align-items: stretch;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .nav-link {
     width: 33%;
@@ -278,7 +358,7 @@ body {
 }
 
 .restaus {
-  background-color: rgb(247, 247, 247);
+  background-color: #f7f7f7;
   padding: 64px 25px;
   display: flex;
   flex-direction: column;
@@ -289,7 +369,7 @@ body {
 .restaus-cards {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 18px;
   justify-content: flex-start;
   align-items: stretch;
 }
@@ -309,6 +389,10 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
+  .restaus {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .restaus-cards {
     flex-direction: row;
     padding: 30px 0;
@@ -324,8 +408,8 @@ body {
   height: 60px;
   min-width: 50%;
   border-radius: 30px;
-  background: linear-gradient(0.48turn, #FF79DA, #9356DC);
-  box-shadow: 0 8px 16px 0px #d0d0d0;
+  background: linear-gradient(0.48turn, #FF79DA, #9356dc);
+  box-shadow: 0 8px 16px 0px rgb(208, 208, 208);
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -358,7 +442,7 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   border-radius: 20px;
-  box-shadow: 0 8px 16px 0px #d0d0d0;
+  box-shadow: 0 8px 16px 0px rgb(208, 208, 208);
 }
 .restau-img {
   width: 100%;
@@ -396,7 +480,6 @@ body {
   position: relative;
   width: 40px;
   height: 40px;
-  font-size: 25px;
   cursor: pointer;
 }
 .restau-heart-empty {
@@ -415,10 +498,9 @@ body {
   left: 50%;
   transform: translateX(-50%) scale(0);
   transition: all 0.8s ease-in;
-  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
 }
 .restau-heart:hover .restau-heart-full {
   transform: translate(-50%, -50%) scale(1);
@@ -433,8 +515,7 @@ body {
   position: relative;
   bottom: 40px;
   z-index: 2;
-  background-color: #FFF;
-  padding: 45px 15px 5px;
+  padding: 45px 25px 5px;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -450,12 +531,16 @@ body {
   width: 100%;
   padding-right: 20px;
 }
-.menu-name {
-  font-family: "Shrikhand", "Sans Serif";
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
-@media screen and (min-width: 768px) {
-  .menu-name {
-    font-size: 30px;
+@media screen and (min-width: 992px) {
+  .menu {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -473,7 +558,15 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
-@media screen and (min-width: 768px) {
+.food-type {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
   .food {
     display: flex;
     flex-direction: row;
@@ -484,24 +577,10 @@ body {
   }
 }
 
-.food-title-h2 {
-  font-weight: normal;
-  padding-bottom: 8px;
-}
-
 .green-line {
   width: 40px;
   height: 4px;
-  background-color: #99E2D0;
-}
-
-.food-type {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  justify-content: flex-start;
-  align-items: stretch;
-  width: 100%;
+  background-color: #99e2d0;
 }
 
 .recipe {
@@ -516,7 +595,6 @@ body {
   padding: 15px 12px;
 }
 .recipe-price {
-  font-weight: bold;
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -524,10 +602,6 @@ body {
 }
 .recipe-text, .recipe-name {
   width: 80%;
-  font-size: 16px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .recipe-text {
   width: 75%;
@@ -539,20 +613,16 @@ body {
   top: 0px;
   width: 55px;
   height: 100%;
-  background-color: #99E2D0;
-  color: #FFF;
+  background-color: #99e2d0;
   border-radius: 0 20px 20px 0;
   transition: transform 0.5s ease-in-out;
 }
 .recipe-anim .icon {
-  font-size: 25px;
-  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-360deg);
   transition: transform 0.5s ease-in-out;
-  color: #FFF;
 }
 .recipe:hover .recipe-anim .icon {
   transform: translate(-50%, -50%) rotate(0deg);
@@ -671,30 +741,38 @@ body {
 }
 .footer {
   background-color: #353535;
-  padding: 2em 1.5em 3em;
+  padding: 2em 25px 3em;
 }
 .footer-text {
   list-style-type: none;
   padding-left: 0;
 }
 .footer-logo {
-  height: 18px;
-  margin-bottom: 20px;
+  height: 20px;
+  margin-bottom: 16px;
 }
 .footer-entry {
   padding-left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .footer-icon {
   margin-right: 12px;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .footer {
-    padding: 2em 3em 3em;
+    padding: 2em 25px 3em;
   }
   .footer-logo {
     height: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 2em 50px 3em;
+  }
+  .footer-logo {
+    height: 28px;
   }
 }
