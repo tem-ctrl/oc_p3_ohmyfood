@@ -2,7 +2,6 @@
   position: relative;
   width: 40px;
   height: 40px;
-  font-size: 25px;
   cursor: pointer;
 
   &-empty {
@@ -22,10 +21,9 @@
     left: 50%;
     transform: translateX(-50%) scale(0);
     transition: all 0.8s ease-in;
-    background: linear-gradient(90deg, #FF79DA, #9356DC);
+    background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
   }
 
   &:hover {

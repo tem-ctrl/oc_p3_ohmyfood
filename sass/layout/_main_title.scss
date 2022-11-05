@@ -1,9 +1,10 @@
 .title {
   @include flex-disp(column, center, center, 20px);
-  margin: 42px auto 110px;
+  padding: 42px 0 110px;
+  background-color: $bg-color;
 
   @media screen and (min-width: 768px) {
-    margin: 50px auto 75px;
+    padding: 50px 0 75px;
     gap: 20px;
 
     br {

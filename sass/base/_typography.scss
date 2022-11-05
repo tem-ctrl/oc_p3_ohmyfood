@@ -1,6 +1,6 @@
 // General typos
 body {
-    font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .h1 {
@@ -8,7 +8,11 @@ body {
 }
 
 .h2 {
-  font-size: 18px
+  font-size: 18px;
+}
+
+.h3 {
+  font-size: 16px;
 }
 
 /*
@@ -19,6 +23,7 @@ body {
 .location {
   font-size: 14px;
   font-weight: bold;
+  color:  adjust-gray($ad: -149);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -29,6 +34,11 @@ body {
 // Main title
 .title {
   text-align: center;
+  &-text {
+    font-size: 18px;
+    font-weight: 300;
+    color:  adjust-gray($ad: -149);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
@@ -40,30 +50,43 @@ body {
 
     &-text {
       font-size: 20px;
-      font-weight: 200;
-      color: $color-gray;
     }
   }
 }
 
 // Navigation
 .nav {
-  &:hover .nav-icon {
+  &-link:hover &-icon {
     color: $color-primary;
+  }
+
+  &-title {
+    font-size: 22px;
+  }
+
+  &-text {
+    font-size: 16px;
   }
 
   &-link-mark {
     color: $color-white;
   }
-  
+
   @media screen and (min-width: 768px) {
-    &-link, &-link-mark {
+    &-link,
+    &-link-mark {
       font-size: 16px;
     }
   }
 }
 
 // Restaurants
+.restaus {
+  &-title {
+    font-size: 22px;
+  }
+}
+
 .restau {
   &-new {
     color: #1b6150;
@@ -84,7 +107,12 @@ body {
     font-size: 14px;
   }
 
-  &, &-link {
+  &-icon {
+    font-size: 12px;
+  }
+
+  &,
+  &-link {
     color: $color-white;
 
     @media screen and (min-width: 768px) {
@@ -98,10 +126,69 @@ body {
 */
 //  Buttons
 .button {
+
   &,
   &-link {
     color: $color-white;
-    font-size: 20px;
+    font-size: 18px;
+  }
+}
+
+.restau-loc {
+  font-weight: 300;
+}
+
+.restau-heart {
+  font-size: 25px;
+
+  &-full {
+    color: transparent;
+  }
+}
+
+/* 
+* Pages
+*/
+
+.menu {
+  &-name {
+    font-family: 'Shrikhand', 'Sans Serif';
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.food {
+  &-title-h2 {
+    font-weight: normal;
+    padding-bottom: 8px;
+  }
+}
+
+.recipe {
+  &-price {
+    font-weight: bold;
+  }
+  &-text {
+    font-weight: 300;
+    columns: $color-black;
+  }
+  &-text, &-name {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &-anim {
+    color: $color-white;
+
+    & .icon {
+      font-size: 25px;
+      font-weight: bold;
+      color: $color-white;
+    }
   }
 }
 

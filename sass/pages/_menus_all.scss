@@ -3,10 +3,9 @@
   position: relative;
   bottom: 40px;
   z-index: 2;
-  background-color: $color-white;
-  padding: 45px 15px 5px;
+  padding: 45px $mobile-margin 5px;
   @include flex-disp($direction: column, $gap: 35px);
-  background-color: #f7f7f7;
+  background-color:  $bg-color;
 
   &-title {
     @include flex-disp(row, space-between, center, 0);
@@ -14,11 +13,14 @@
     padding-right: 20px;
   }
 
-  &-name {
-    font-family: 'Shrikhand', 'Sans Serif';
-    @media screen and (min-width: 768px) {
-      font-size: 30px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    padding-left: $tablet-margin;
+    padding-right: $tablet-margin;
+  }
+
+    @media screen and (min-width: 992px) {
+    padding-left: $desktop-margin;
+    padding-right: $desktop-margin;
   }
 }
 
@@ -29,26 +31,21 @@
     @include flex-disp(column, center, flex-start, 12px);
   }
 
-  @media screen and (min-width: 768px) {
+  &-type {
+    @include flex-disp($direction: column, $gap: 18px);
+    width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
     @include flex-disp($direction: row, $gap: 20px);
     width: 100%;
   }
-}
-
-.food-title-h2 {
-  font-weight: normal;
-  padding-bottom: 8px;
 }
 
 .green-line {
   width: 40px;
   height: 4px;
   background-color: $color-tertiary;
-}
-
-.food-type {
-  @include flex-disp($direction: column, $gap: 18px);
-  width: 100%;
 }
 
 .recipe {
@@ -63,7 +60,6 @@
   padding: 15px 12px;
 
   &-price {
-    font-weight: bold;
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -72,10 +68,6 @@
 
   &-text, &-name {
     width: 80%;
-    font-size: 16px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
   }
 
   &-text {
@@ -90,19 +82,15 @@
     width: 55px;
     height: 100%;
     background-color: $color-tertiary;
-    color: $color-white;
     border-radius: 0 20px 20px 0;
     transition: transform 0.5s ease-in-out;
 
     & .icon {
-      font-size: 25px;
-      font-weight: bold;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(-360deg);
       transition: transform 0.5s ease-in-out;
-      color: $color-white;
     }
   }
 

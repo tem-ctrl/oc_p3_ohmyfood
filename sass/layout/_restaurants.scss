@@ -1,10 +1,10 @@
 .restaus {
-  background-color: rgb(247, 247, 247);
+  background-color: $bg-color;
   padding: 64px $mobile-margin;
   @include flex-disp($direction: column, $gap: 24px);
 
   &-cards {
-    @include flex-disp($direction: column, $gap: 30px);
+    @include flex-disp($direction: column, $gap: 18px);
   }
 
   @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -20,6 +20,8 @@
   }
 
   @media screen and (min-width: 992px) {
+    padding-left: $desktop-margin;
+    padding-right: $desktop-margin;
     &-cards {
     flex-direction: row;
     padding: 30px 0;

@@ -6,3 +6,8 @@
         @return darken($colour, 10%);
     }
 }
+
+@function adjust-gray ($ad: 10) {
+  // update r, g and b channels with values of $ad
+  @return adjust-color($bg-color, $red: $ad, $green: $ad, $blue: $ad);
+}
