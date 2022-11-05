@@ -1,6 +1,5 @@
 .footer {
   background-color: $color-black;
-  color: $color-white;
   padding: 2em 1.5em 3em;
 
   &-text {
@@ -24,19 +23,11 @@
     height: 15px;
   }
 
-  &-link {
-    color: $color-white;
-  }
-
   @media screen and (min-width: 768px) {
     padding: 2em 3em 3em;  
     
     &-logo {
       height: 24px;
-    }
-
-    &-link {
-      font-size: 17px;
     }
   }
 }

@@ -1,12 +1,12 @@
 .button {
   padding: 0 1.5em;
-  height: 50px;
-  border-radius: 25px;
+  height: 60px;
+  min-width: 50%;
+  border-radius: 30px;
   background: linear-gradient(0.48turn, $color-secondary, $color-primary);
   box-shadow: 0 8px 16px 0px $color-light-gray;
   @include flex-disp($justify-content: center, $align-items: center);
   align-self: center;
-  color: $color-white;
   border: none;
   cursor: pointer;
 
@@ -16,7 +16,9 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 80px;
-    border-radius: 40px;
+    height: 60px;
+    border-radius: 30px;
+    width: fit-content;
+    min-width: 300px;
   }
 }

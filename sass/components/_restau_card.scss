@@ -16,11 +16,8 @@
   &-new {
     padding: 5px 12px;
     background-color: #99e2d0;
-    color: #1b6150;
     position: absolute;
     width: fit-content;
-    font-size: 10px;
-    font-weight: bold;
     top: 15px;
     right: 15px;
   }
@@ -32,16 +29,9 @@
 
   @media screen and (min-width: 768px) and (max-width: 991px) {
     width: 47.5%;
-
-    &-new {
-      font-size: 14px;
-    }
   }
 
   @media screen and (min-width: 992px) {
     width: 25%;
-    &-new {
-      font-size: 14px;
-    }
   }
 }
