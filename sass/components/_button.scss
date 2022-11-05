@@ -11,7 +11,7 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 8px 16px 0px darken(adjust-gray(-39), 15%);
+    box-shadow: 0 8px 16px 0px darken(adjust-gray(-39), 25%);
     background: linear-gradient(0.48turn, lighten($color-secondary, 5%), lighten($color-primary, 5%));
   }
 

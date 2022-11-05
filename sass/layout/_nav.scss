@@ -20,13 +20,13 @@
       height: 100%;
       background-color: $bg-color;
       border-radius: 25px;
-      box-shadow: 0 8px 16px 0px darken($bg-color, 15%);
+      box-shadow: 0 4px 12px 0px darken($bg-color, 10%);
       position: relative;
       right: 14px;
 
       &:hover {
         background-color: lighten($color-primary, 35%);
-        box-shadow: 0 8px 16px 0px darken($bg-color, 20%);
+        box-shadow: 0 4px 12px 0px darken($bg-color, 25%);
       }
     }
 
@@ -48,7 +48,7 @@
     }
 
     &-link {
-      height: 6em;
+      // height: 6em;
       
       &-mark {
           height: 32px;
