@@ -300,13 +300,13 @@ body {
   height: 100%;
   background-color: #f7f7f7;
   border-radius: 25px;
-  box-shadow: 0 8px 16px 0px #d1d1d1;
+  box-shadow: 0 4px 12px 0px #dedede;
   position: relative;
   right: 14px;
 }
 .nav-link-div:hover {
   background-color: #f2eafb;
-  box-shadow: 0 8px 16px 0px #c4c4c4;
+  box-shadow: 0 4px 12px 0px #b7b7b7;
 }
 .nav-link-mark {
   width: 28px;
@@ -327,9 +327,6 @@ body {
   .nav-title {
     align-self: center;
     font-size: 26px;
-  }
-  .nav-link {
-    height: 6em;
   }
   .nav-link-mark {
     height: 32px;
@@ -415,7 +412,7 @@ body {
   cursor: pointer;
 }
 .button:hover {
-  box-shadow: 0 8px 16px 0px #aaaaaa;
+  box-shadow: 0 8px 16px 0px #909090;
   background: linear-gradient(0.48turn, #ff93e1, #a16be0);
 }
 @media screen and (min-width: 768px) {
