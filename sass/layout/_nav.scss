@@ -20,13 +20,13 @@
       height: 100%;
       background-color: $bg-color;
       border-radius: 25px;
-      box-shadow: 0 4px 8px 0px $color-light-gray;
+      box-shadow: 0 8px 16px 0px darken($bg-color, 15%);
       position: relative;
       right: 14px;
 
       &:hover {
         background-color: lighten($color-primary, 35%);
-        box-shadow: 0 4px 8px 0px darken($color-light-gray, 12%);
+        box-shadow: 0 8px 16px 0px darken($bg-color, 20%);
       }
     }
 

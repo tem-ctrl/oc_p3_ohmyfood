@@ -5,7 +5,6 @@
 
   @media screen and (min-width: 768px) {
     height: 75px;
-    color: $color-black;
-    background-color: lighten($color-light-gray, 7%);
+    color: adjust-gray(-194);
   }
 }

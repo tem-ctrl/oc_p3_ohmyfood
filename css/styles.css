@@ -109,7 +109,7 @@ body {
 }
 
 .restau-new {
-  color: #1b6150;
+  color: #008766;
   font-size: 10px;
   font-weight: bold;
 }
@@ -142,10 +142,6 @@ body {
   font-size: 18px;
 }
 
-.restau-loc {
-  font-weight: 300;
-}
-
 .restau-heart {
   font-size: 25px;
 }
@@ -175,7 +171,7 @@ body {
 }
 .recipe-text {
   font-weight: 300;
-  columns: #353535;
+  color: #353535;
 }
 .recipe-text, .recipe-name {
   font-size: 16px;
@@ -231,7 +227,6 @@ body {
   .location {
     height: 75px;
     color: #353535;
-    background-color: #e2e2e2;
   }
 }
 
@@ -305,13 +300,13 @@ body {
   height: 100%;
   background-color: #f7f7f7;
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0px rgb(208, 208, 208);
+  box-shadow: 0 8px 16px 0px #d1d1d1;
   position: relative;
   right: 14px;
 }
 .nav-link-div:hover {
   background-color: #f2eafb;
-  box-shadow: 0 4px 8px 0px #b1b1b1;
+  box-shadow: 0 8px 16px 0px #c4c4c4;
 }
 .nav-link-mark {
   width: 28px;
@@ -409,7 +404,7 @@ body {
   min-width: 50%;
   border-radius: 30px;
   background: linear-gradient(0.48turn, #FF79DA, #9356dc);
-  box-shadow: 0 8px 16px 0px rgb(208, 208, 208);
+  box-shadow: 0 8px 16px 0px #d0d0d0;
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -442,7 +437,7 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   border-radius: 20px;
-  box-shadow: 0 8px 16px 0px rgb(208, 208, 208);
+  box-shadow: 0 8px 16px 0px #d0d0d0;
 }
 .restau-img {
   width: 100%;
