@@ -8,21 +8,21 @@ body {
   overflow-x: hidden;
 }
 
-.link{
-  text-decoration: none;
-  color: adjust-gray(-194);
-}
-
-.grey-icon {
-  color: adjust-gray(-121);
-}
-
 .img {
   object-fit: cover;
 }
 
 .restaurant-loader {
-  display: none;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: calc(50vh - 200px);
+  right: calc(50vw - 100px);
+  transform: translateY(-100vh);
+  animation: vanish 3s cubic-bezier(.63,.51,.85,.61);
+  background-color: #000;
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .food-type {

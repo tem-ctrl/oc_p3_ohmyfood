@@ -1,5 +1,5 @@
 .restaurant-loader {
-  $potcolor: #FF7900;
+  $potcolor: $color-tertiary;
   $bordercolor1: $potcolor;
 
   width: $spinner-width;
@@ -53,7 +53,6 @@
 }
 
 @keyframes restaurant-loader-pot {
-
   from,
   45%,
   55%,
@@ -64,31 +63,24 @@
   to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-
   0% {
     transform: rotate(0);
   }
-
   45% {
     transform: translate3d(-4%, -13%, 0) rotate(-13deg);
   }
-
   55% {
     transform: translate3d(1%, -2%, 0) rotate(6deg);
   }
-
   65% {
     transform: translate3d(-2%, -4%, 0) rotate(-3deg);
   }
-
   75% {
     transform: translate3d(2%, 3%, 0) rotate(3deg);
   }
-
   80% {
     transform: translate3d(-2%, 1%, 0) rotate(-2deg);
   }
-
   to {
     transform: none;
   }
@@ -99,19 +91,31 @@
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(359deg);
   }
 }
 
+// Make recipes come in with a slight delay one after another
 @keyframes come-in {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
     transform: translateY(-10px);
+  }
+}
+
+// Get the loader out of the screen
+@keyframes vanish {
+  from {
+    transform: translateY(0vh);
+  }
+  80% {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-100vh);
   }
 }
