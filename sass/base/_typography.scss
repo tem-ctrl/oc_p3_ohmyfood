@@ -15,9 +15,8 @@ body {
   font-size: 16px;
 }
 
-/*
-* Layout
-*/
+
+// Layout
 
 // Location
 .location {
@@ -121,9 +120,8 @@ body {
   }
 }
 
-/*
-*  Components
-*/
+// Components
+
 //  Buttons
 .button {
 
@@ -142,9 +140,8 @@ body {
   }
 }
 
-/* 
-* Pages
-*/
+ 
+// Pages
 
 .menu {
   &-name {
@@ -157,8 +154,8 @@ body {
 
 .food {
   &-title-h2 {
-    font-weight: normal;
-    padding-bottom: 8px;
+    font-weight: 350;
+    padding-bottom: 5px;
   }
 }
 
@@ -166,12 +163,16 @@ body {
   &-price {
     font-weight: bold;
   }
-  &-text {
-    font-weight: 300;
-    color: adjust-gray($ad: -194);
+  &-name {
+    font-size: 18px;
+    font-weight: 600;
   }
+  &-text {
+    font-size: 15px;
+    font-weight: 350;
+  }
+
   &-text, &-name {
-    font-size: 16px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -182,7 +183,7 @@ body {
 
     & .icon {
       font-size: 25px;
-      font-weight: bold;
+      font-weight: bolder;
       color: $color-white;
     }
   }

@@ -32,7 +32,7 @@
   }
 
   &-type {
-    @include flex-disp($direction: column, $gap: 18px);
+    @include flex-disp($direction: column, $gap: 16px);
     width: 100%;
   }
 
@@ -43,8 +43,8 @@
 }
 
 .green-line {
-  width: 40px;
-  height: 4px;
+  width: 42px;
+  height: 3px;
   background-color: $color-tertiary;
 }
 
@@ -54,7 +54,7 @@
   height: 70px;
   background-color: $color-white;
   border-radius: 20px;
-  box-shadow: 0 0 8px 2px darken(adjust-gray(-39), 5%);
+  box-shadow: 0 4px 8px 0 darken(adjust-gray(-39), 3%);
   cursor: pointer;
   overflow: hidden;
   padding: 15px 14px;
@@ -116,7 +116,7 @@
 
 @for $i from 1 through 3 {
   .foot-type-#{$i} {
-    animation: come-in 0.6s ease-in-out forwards calc($i * 1.2s);
+    animation: come-in 0.4s ease-in forwards calc($i * 0.4s);
   }
 }
 

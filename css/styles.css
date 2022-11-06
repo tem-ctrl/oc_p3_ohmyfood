@@ -25,11 +25,6 @@ body {
   display: none;
 }
 
-.fa-lg {
-  font-size: 18px;
-  display: block;
-}
-
 .food-type {
   opacity: 0;
 }
@@ -50,9 +45,6 @@ body {
   font-size: 16px;
 }
 
-/*
-* Layout
-*/
 .location {
   font-size: 14px;
   font-weight: bold;
@@ -134,9 +126,6 @@ body {
   }
 }
 
-/*
-*  Components
-*/
 .button, .button-link {
   color: #FFF;
   font-size: 18px;
@@ -149,9 +138,6 @@ body {
   color: transparent;
 }
 
-/* 
-* Pages
-*/
 .menu-name {
   font-family: "Shrikhand", "Sans Serif";
 }
@@ -162,19 +148,22 @@ body {
 }
 
 .food-title-h2 {
-  font-weight: normal;
-  padding-bottom: 8px;
+  font-weight: 350;
+  padding-bottom: 5px;
 }
 
 .recipe-price {
   font-weight: bold;
 }
+.recipe-name {
+  font-size: 18px;
+  font-weight: 600;
+}
 .recipe-text {
-  font-weight: 300;
-  color: #353535;
+  font-size: 15px;
+  font-weight: 350;
 }
 .recipe-text, .recipe-name {
-  font-size: 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -184,7 +173,7 @@ body {
 }
 .recipe-anim .icon {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: bolder;
   color: #FFF;
 }
 
@@ -553,7 +542,7 @@ body {
 .food-type {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   justify-content: flex-start;
   align-items: stretch;
   width: 100%;
@@ -570,8 +559,8 @@ body {
 }
 
 .green-line {
-  width: 40px;
-  height: 4px;
+  width: 42px;
+  height: 3px;
   background-color: #99e2d0;
 }
 
@@ -581,7 +570,7 @@ body {
   height: 70px;
   background-color: #FFF;
   border-radius: 20px;
-  box-shadow: 0 0 8px 2px #c3c3c3;
+  box-shadow: 0 4px 8px 0 #c8c8c8;
   cursor: pointer;
   overflow: hidden;
   padding: 15px 14px;
@@ -631,15 +620,15 @@ body {
 }
 
 .foot-type-1 {
-  animation: come-in 0.6s ease-in-out forwards 1.2s;
+  animation: come-in 0.4s ease-in forwards 0.4s;
 }
 
 .foot-type-2 {
-  animation: come-in 0.6s ease-in-out forwards 2.4s;
+  animation: come-in 0.4s ease-in forwards 0.8s;
 }
 
 .foot-type-3 {
-  animation: come-in 0.6s ease-in-out forwards 3.6s;
+  animation: come-in 0.4s ease-in forwards 1.2s;
 }
 
 .restaurant-loader {
