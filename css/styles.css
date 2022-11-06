@@ -45,6 +45,10 @@ body {
   font-size: 16px;
 }
 
+.homelink {
+  font-size: 30px;
+}
+
 .location {
   font-size: 14px;
   font-weight: bold;
@@ -91,8 +95,11 @@ body {
   color: #FFF;
 }
 @media screen and (min-width: 768px) {
-  .nav-link, .nav-link-mark {
+  .nav-link {
     font-size: 16px;
+  }
+  .nav-link-mark {
+    font-size: 14px;
   }
 }
 
@@ -317,10 +324,6 @@ body {
     align-self: center;
     font-size: 26px;
   }
-  .nav-link-mark {
-    height: 32px;
-    width: 34px;
-  }
 }
 @media screen and (min-width: 992px) {
   .nav-ol {
@@ -406,8 +409,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .button {
-    height: 60px;
-    border-radius: 30px;
     width: fit-content;
     min-width: 300px;
   }

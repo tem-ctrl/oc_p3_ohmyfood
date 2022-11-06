@@ -17,6 +17,10 @@ body {
 
 
 // Layout
+// Header
+.homelink {
+  font-size: 30px;
+}
 
 // Location
 .location {
@@ -72,9 +76,11 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    &-link,
-    &-link-mark {
+    &-link {
       font-size: 16px;
+      &-mark {
+        font-size: 14px;
+      }
     }
   }
 }
