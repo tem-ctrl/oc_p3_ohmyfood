@@ -580,7 +580,7 @@ body {
   position: absolute;
   right: 24px;
   bottom: 10px;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .recipe-text, .recipe-name {
   width: 80%;
@@ -597,7 +597,7 @@ body {
   height: 100%;
   background-color: #99e2d0;
   border-radius: 0 20px 20px 0;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .recipe-anim .icon {
   position: absolute;

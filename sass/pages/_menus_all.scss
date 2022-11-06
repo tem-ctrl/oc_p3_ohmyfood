@@ -1,3 +1,4 @@
+// Menu pages styles
 .menu {
   border-radius: 40px 40px 0 0;
   position: relative;
@@ -63,7 +64,7 @@
     position: absolute;
     right: 24px;
     bottom: 10px;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   &-text, &-name {
@@ -83,7 +84,7 @@
     height: 100%;
     background-color: $color-tertiary;
     border-radius: 0 20px 20px 0;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 
     & .icon {
       position: absolute;
