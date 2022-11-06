@@ -23,3 +23,21 @@
   align-self: center;
   font-size: 26px;
 }
+
+// Add equal left-right padding to element
+@mixin equal-padding ($pad: $mobile-margin){  
+  padding-left: $pad;
+  padding-right: $pad;
+}
+
+// Main font family
+@mixin font-primary {
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Poppins', ui-sans-serif,
+  system-ui, '-apple-system',  sans-serif;
+}
+
+// Secondary font
+@mixin font-secondary {
+  font-family: 'Shrikhand', 'sans-serif';
+}
+

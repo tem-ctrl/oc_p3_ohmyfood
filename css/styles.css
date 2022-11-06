@@ -12,24 +12,12 @@ body {
   object-fit: cover;
 }
 
-.restaurant-loader {
-  z-index: 5;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  top: calc(50vh - 200px);
-  right: calc(50vw - 100px);
-  transform: translateY(-100vh);
-  animation: vanish 3s cubic-bezier(0.63, 0.51, 0.85, 0.61);
-  background-color: #000;
-}
-
 .food-type {
   opacity: 0;
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Poppins", ui-sans-serif, system-ui, "-apple-system", sans-serif;
 }
 
 .h1 {
@@ -53,8 +41,10 @@ body {
   color: #7e7e7e;
 }
 
-.homelink {
-  font-size: 30px;
+.loader {
+  font-family: "Shrikhand", "sans-serif";
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .location {
@@ -100,7 +90,7 @@ body {
   font-size: 16px;
 }
 .nav-link-mark {
-  color: #FFF;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .nav-link {
@@ -133,7 +123,7 @@ body {
   font-size: 12px;
 }
 .footer, .footer-link {
-  color: #FFF;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .footer, .footer-link {
@@ -142,7 +132,7 @@ body {
 }
 
 .button, .button-link {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -154,7 +144,7 @@ body {
 }
 
 .menu-name {
-  font-family: "Shrikhand", "Sans Serif";
+  font-family: "Shrikhand", "sans-serif";
 }
 @media screen and (min-width: 768px) {
   .menu-name {
@@ -184,12 +174,64 @@ body {
   overflow: hidden;
 }
 .recipe-anim {
-  color: #FFF;
+  color: #fff;
 }
 .recipe-anim .icon {
   font-size: 25px;
   font-weight: bolder;
-  color: #FFF;
+  color: #fff;
+}
+
+.loader {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+  transform: translateY(-100vh);
+  animation: vanish 3s cubic-bezier(0.63, 0.51, 0.85, 0.61);
+}
+.loader-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-inner-1 {
+  animation: come-in 0.3s ease-in forwards 0.3s infinite;
+}
+
+.loader-inner-2 {
+  animation: come-in 0.3s ease-in forwards 0.6s infinite;
+}
+
+.loader-inner-3 {
+  animation: come-in 0.3s ease-in forwards 0.9s infinite;
+}
+
+.loader-inner-4 {
+  animation: come-in 0.3s ease-in forwards 1.2s infinite;
+}
+
+.loader-inner-5 {
+  animation: come-in 0.3s ease-in forwards 1.5s infinite;
+}
+
+.loader-inner-6 {
+  animation: come-in 0.3s ease-in forwards 1.8s infinite;
+}
+
+.loader-inner-7 {
+  animation: come-in 0.3s ease-in forwards 2.1s infinite;
+}
+
+.loader-inner-8 {
+  animation: come-in 0.3s ease-in forwards 2.4s infinite;
 }
 
 .header {
@@ -214,7 +256,6 @@ body {
   left: 35px;
 }
 .home-link:hover {
-  transform: scale(1.3);
   color: #9356dc;
 }
 
@@ -225,7 +266,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
-  background: linear-gradient(0turn, #eaeaea 90%, #c9c9c9);
+  background: linear-gradient(0turn, #eaeaea 95%, #c9c9c9);
 }
 @media screen and (min-width: 768px) {
   .location {
@@ -400,7 +441,7 @@ body {
   height: 60px;
   min-width: 50%;
   border-radius: 30px;
-  background: linear-gradient(0.48turn, #FF79DA, #9356dc);
+  background: linear-gradient(0.48turn, #ff79da, #9356dc);
   box-shadow: 0 8px 16px 0px #d0d0d0;
   display: flex;
   flex-direction: row;
@@ -577,7 +618,7 @@ body {
   position: relative;
   width: 100%;
   height: 70px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 #c8c8c8;
   cursor: pointer;
@@ -640,52 +681,6 @@ body {
   animation: come-in 0.4s ease-in forwards 1.2s;
 }
 
-.restaurant-loader {
-  width: 200px;
-  height: 200px;
-  position: fixed;
-  padding: 2%;
-  background-color: #fff;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 100%;
-}
-.restaurant-loader .restaurant-loader-inner {
-  width: 100%;
-  height: 100%;
-  animation: restaurant-loader-spin 0.5s linear infinite;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  border: 3px solid transparent;
-  border-right-color: #99e2d0;
-  border-left-color: #99e2d0;
-  border-radius: 50%;
-  content: "";
-}
-.restaurant-loader:before, .restaurant-loader:after {
-  content: "";
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.restaurant-loader:before {
-  background-image: url(https://i.imgur.com/Nc4xNES.png);
-  height: 35%;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-name: restaurant-loader-pot;
-}
-.restaurant-loader:after {
-  background-image: url(https://i.imgur.com/lNXd2Lr.png);
-  height: 65%;
-}
-
 @keyframes restaurant-loader-pot {
   from, 45%, 55%, 65%, 75%, 80%, 85%, to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -737,7 +732,7 @@ body {
     transform: translateY(0vh);
   }
   to {
-    transform: translateY(-100vh);
+    transform: translateY(-105vh);
   }
 }
 .footer {

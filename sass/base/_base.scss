@@ -12,19 +12,6 @@ body {
   object-fit: cover;
 }
 
-.restaurant-loader {
-  z-index: 5;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  top: calc(50vh - 200px);
-  right: calc(50vw - 100px);
-  transform: translateY(-100vh);
-  animation: vanish 3s cubic-bezier(.63,.51,.85,.61);
-  background-color: #000;
-  // animation: name duration timing-function delay iteration-count direction fill-mode;
-}
-
 .food-type {
   opacity: 0;
 }

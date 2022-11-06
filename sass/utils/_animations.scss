@@ -1,56 +1,78 @@
-.restaurant-loader {
-  $potcolor: $color-tertiary;
-  $bordercolor1: $potcolor;
 
-  width: $spinner-width;
-  height: $spinner-width;
-  position: fixed;
-  padding: 2%;
-  background-color: #fff;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
-  border-radius: 100%;
+// .loader {
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: #000;
+//   transform: translateY(-100vh);
+//   animation: vanish 3s;// cubic-bezier(.63,.51,.85,.61);
+  // animation-duration: 3s;
+// }
 
-  .restaurant-loader-inner {
-    width: 100%;
-    height: 100%;
-    animation: restaurant-loader-spin .5s linear infinite;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    border: 3px solid transparent;
-    border-right-color: $bordercolor1;
-    border-left-color: $bordercolor1;
-    border-radius: 50%;
-    content: '';
-  }
 
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+// .restaurant-loader {
+// $potcolor: $color-tertiary;
+// $bordercolor1: $potcolor;
 
-  &:before {
-    background-image: url(https://i.imgur.com/Nc4xNES.png);
-    height: 35%;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-name: restaurant-loader-pot;
-  }
+//   width: $spinner-width;
+//   height: $spinner-width;
+//   position: fixed;
+//   padding: 2%;
+//   background-color: $bg-color;
+//   box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+//   border-radius: 100%;
+// .restaurant-loader {
+//     width: $spinner-width;
+//     height: $spinner-width;
+//     background-color: $bg-color;
+//     position: absolute;
+//     top: 40vh;
+//     left: 40vw;
+//     // display: contents;
 
-  &:after {
-    background-image: url(https://i.imgur.com/lNXd2Lr.png);
-    height: 65%;
-  }
-}
+// .loader-inner {
+//     width: $spinner-width;
+//     height: $spinner-width;
+//     animation: restaurant-loader-spin 0.8s linear infinite;
+//     box-sizing: border-box;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     display: block;
+//     border: 3px solid transparent;
+//     border-right-color: $bordercolor1;
+//     border-left-color: $bordercolor1;
+//     border-radius: 50%;
+//     content: '';
+//   }
+
+//   &:before,
+//   &:after {
+//     content: '';
+//     display: block;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//   }
+
+//   &:before {
+//     background-image: url(https://i.imgur.com/Nc4xNES.png);
+//     height: 35%;
+//     animation-duration: 2s;
+//     animation-fill-mode: both;
+//     animation-iteration-count: infinite;
+//     animation-name: restaurant-loader-pot;
+//   }
+
+//   &:after {
+//     background-image: url(https://i.imgur.com/lNXd2Lr.png);
+//     height: 65%;
+//   }
+// }
 
 @keyframes restaurant-loader-pot {
   from,
@@ -116,6 +138,8 @@
     transform: translateY(0vh);
   }
   to {
-    transform: translateY(-100vh);
+    // opacity: 0;
+    // display: none;
+    transform: translateY(-105vh);
   }
 }

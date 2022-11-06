@@ -1,0 +1,21 @@
+.loader {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  @include flex-disp(row, center, center, 0);
+  background: $bg-color;
+  transform: translateY(-100vh);
+  animation: vanish 3s cubic-bezier(.63,.51,.85,.61);
+
+  &-inner {
+    @include flex-disp(row, center, center, 0);
+    // opacity: 0;
+  }
+}
+
+@for $i from 1 through 8 {
+  .loader-inner-#{$i} {
+    animation: come-in 0.3s ease-in forwards calc($i * 0.3s) infinite;
+  }
+}

@@ -1,7 +1,7 @@
 .location {
   @include flex-disp(row, center, center, 20px);
   height: 50px;
-  background: linear-gradient(0turn,  adjust-gray($ad: -13) 90%,  adjust-gray($ad: -46));
+  background: linear-gradient(0turn,  adjust-gray($ad: -13) 95%,  adjust-gray($ad: -46));
 
   @media screen and (min-width: 768px) {
     height: 75px;

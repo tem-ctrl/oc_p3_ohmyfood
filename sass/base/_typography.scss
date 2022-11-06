@@ -1,6 +1,6 @@
 // General typos
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  @include font-primary;
 }
 
 .h1 {
@@ -26,9 +26,12 @@ body {
 
 
 // Layout
-// Header
-.homelink {
-  font-size: 30px;
+
+// Loader
+.loader {
+  @include font-secondary;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 // Location
@@ -160,7 +163,7 @@ body {
 
 .menu {
   &-name {
-    font-family: 'Shrikhand', 'Sans Serif';
+    @include font-secondary;
     @media screen and (min-width: 768px) {
       font-size: 30px;
     }
