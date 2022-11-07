@@ -14,8 +14,8 @@
 }
 
 // Make transition
-@mixin transit ($prop: transform, $duration: 0.5s, $timing: ease-in-out) {
-  transition: $prop $duration $timing;
+@mixin transit ($duration: 0.5s) {
+  transition: transform $duration ease-in-out;
 }
 
 // Center titles "Restaurants" and "Fonctionnement" on tablets and desktops

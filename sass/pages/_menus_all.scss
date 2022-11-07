@@ -15,13 +15,11 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 991px) {
-    padding-left: $tablet-margin;
-    padding-right: $tablet-margin;
+    @include equal-padding($tablet-margin);
   }
 
     @media screen and (min-width: 992px) {
-    padding-left: $desktop-margin;
-    padding-right: $desktop-margin;
+    @include equal-padding($desktop-margin);
   }
 }
 

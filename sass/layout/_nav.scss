@@ -52,8 +52,7 @@
   @media screen and (min-width: 992px) {
     &-ol {
       @include flex-disp($direction: row, $justify-content: space-between, $gap: 20px);
-      padding-left: calc($desktop-margin - $mobile-margin);
-      padding-right: calc($desktop-margin - $mobile-margin);
+      @include equal-padding($desktop-margin - $mobile-margin);
     }
 
     &-link {

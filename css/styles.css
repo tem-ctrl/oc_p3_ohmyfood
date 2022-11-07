@@ -203,35 +203,35 @@ body {
 }
 
 .loader-inner-1 {
-  animation: come-in 0.3s ease-in forwards 0.3s infinite;
+  animation: anim-letter 0.2s linear forwards 0.2s;
 }
 
 .loader-inner-2 {
-  animation: come-in 0.3s ease-in forwards 0.6s infinite;
+  animation: anim-letter 0.2s linear forwards 0.4s;
 }
 
 .loader-inner-3 {
-  animation: come-in 0.3s ease-in forwards 0.9s infinite;
+  animation: anim-letter 0.2s linear forwards 0.6s;
 }
 
 .loader-inner-4 {
-  animation: come-in 0.3s ease-in forwards 1.2s infinite;
+  animation: anim-letter 0.2s linear forwards 0.8s;
 }
 
 .loader-inner-5 {
-  animation: come-in 0.3s ease-in forwards 1.5s infinite;
+  animation: anim-letter 0.2s linear forwards 1s;
 }
 
 .loader-inner-6 {
-  animation: come-in 0.3s ease-in forwards 1.8s infinite;
+  animation: anim-letter 0.2s linear forwards 1.2s;
 }
 
 .loader-inner-7 {
-  animation: come-in 0.3s ease-in forwards 2.1s infinite;
+  animation: anim-letter 0.2s linear forwards 1.4s;
 }
 
 .loader-inner-8 {
-  animation: come-in 0.3s ease-in forwards 2.4s infinite;
+  animation: anim-letter 0.2s linear forwards 1.6s;
 }
 
 .header {
@@ -681,40 +681,6 @@ body {
   animation: come-in 0.4s ease-in forwards 1.2s;
 }
 
-@keyframes restaurant-loader-pot {
-  from, 45%, 55%, 65%, 75%, 80%, 85%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  0% {
-    transform: rotate(0);
-  }
-  45% {
-    transform: translate3d(-4%, -13%, 0) rotate(-13deg);
-  }
-  55% {
-    transform: translate3d(1%, -2%, 0) rotate(6deg);
-  }
-  65% {
-    transform: translate3d(-2%, -4%, 0) rotate(-3deg);
-  }
-  75% {
-    transform: translate3d(2%, 3%, 0) rotate(3deg);
-  }
-  80% {
-    transform: translate3d(-2%, 1%, 0) rotate(-2deg);
-  }
-  to {
-    transform: none;
-  }
-}
-@keyframes restaurant-loader-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
 @keyframes come-in {
   from {
     opacity: 0;
@@ -722,6 +688,14 @@ body {
   to {
     opacity: 1;
     transform: translateY(-10px);
+  }
+}
+@keyframes anim-letter {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(-5px);
   }
 }
 @keyframes vanish {

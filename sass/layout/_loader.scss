@@ -16,6 +16,7 @@
 
 @for $i from 1 through 8 {
   .loader-inner-#{$i} {
-    animation: come-in 0.3s ease-in forwards calc($i * 0.3s) infinite;
+    // opacity: 0;
+    animation: anim-letter 0.2s linear forwards calc($i * 0.2s);
   }
 }
