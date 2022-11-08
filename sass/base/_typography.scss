@@ -29,9 +29,11 @@ body {
 
 // Loader
 .loader {
-  @include font-secondary;
-  font-size: 48px;
-  font-weight: bold;
+  &-inner {
+    @include font-secondary;
+    font-size: 48px;
+    font-weight: bold;
+  }
 }
 
 // Location
