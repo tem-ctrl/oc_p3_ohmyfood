@@ -308,11 +308,16 @@ body {
   width: 75vh;
   height: 75vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .loader-area {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 25vw;
   width: 50%;
   height: 50%;
   background-color: transparent;
