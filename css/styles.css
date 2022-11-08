@@ -12,10 +12,6 @@ body {
   object-fit: cover;
 }
 
-.food-type {
-  opacity: 0;
-}
-
 body {
   font-family: "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Poppins", ui-sans-serif, system-ui, "-apple-system", sans-serif;
 }
@@ -702,6 +698,9 @@ body {
     width: 100%;
   }
 }
+.food-type {
+  opacity: 0;
+}
 
 .green-line {
   width: 42px;
@@ -765,15 +764,15 @@ body {
 }
 
 .foot-type-1 {
-  animation: come-in 0.4s ease-in forwards 0.4s;
+  animation: come-in 0.5s ease-in forwards 0.5s;
 }
 
 .foot-type-2 {
-  animation: come-in 0.4s ease-in forwards 0.8s;
+  animation: come-in 0.5s ease-in forwards 1s;
 }
 
 .foot-type-3 {
-  animation: come-in 0.4s ease-in forwards 1.2s;
+  animation: come-in 0.5s ease-in forwards 1.5s;
 }
 
 @keyframes come-in {

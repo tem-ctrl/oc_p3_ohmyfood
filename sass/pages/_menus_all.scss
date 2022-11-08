@@ -6,7 +6,7 @@
   z-index: 2;
   padding: 45px $mobile-margin 5px;
   @include flex-disp($direction: column, $gap: 35px);
-  background-color:  $bg-color;
+  background-color: $bg-color;
 
   &-title {
     @include flex-disp(row, space-between, center, 0);
@@ -18,14 +18,14 @@
     @include equal-padding($tablet-margin);
   }
 
-    @media screen and (min-width: 992px) {
+  @media screen and (min-width: 992px) {
     @include equal-padding($desktop-margin);
   }
 }
 
 .food {
   @include flex-disp($direction: column, $gap: 50px);
-  
+
   &-body {
     @include flex-disp(column, center, flex-start, 12px);
   }
@@ -38,6 +38,10 @@
   @media screen and (min-width: 992px) {
     @include flex-disp($direction: row, $gap: 20px);
     width: 100%;
+  }
+
+  &-type {
+    opacity: 0;
   }
 }
 
@@ -65,7 +69,8 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  &-text, &-name {
+  &-text,
+  &-name {
     width: 80%;
   }
 
@@ -95,18 +100,19 @@
 
   &:hover {
     & .recipe-anim .icon {
-      transform: translate(-50%,-50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
     }
 
-    & .recipe-anim, & .recipe-price {
+    & .recipe-anim,
+    & .recipe-price {
       transform: translate(-55px);
     }
 
-    & .recipe-name, & .recipe-text {
+    & .recipe-name,
+    & .recipe-text {
       width: calc(100% - 110px);
     }
   }
-
 }
 
 .main-menu {
@@ -115,7 +121,6 @@
 
 @for $i from 1 through 3 {
   .foot-type-#{$i} {
-    animation: come-in 0.4s ease-in forwards calc($i * 0.4s);
+    animation: come-in 0.5s ease-in forwards calc($i * 0.5s);
   }
 }
-
