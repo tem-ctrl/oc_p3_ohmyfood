@@ -3,6 +3,9 @@
 @import "./utils/functions";
 @import "./base/base";
 @import "./base/typography";
+@import "./components/button";
+@import "./components/restau_card";
+@import "./components/restau_heart";
 @import "./layout/loader";
 @import "./layout/header";
 @import "./layout/location";
@@ -10,9 +13,6 @@
 @import "./layout/main_title";
 @import "./layout/nav";
 @import "./layout/restaurants";
-@import "./components/button";
-@import "./components/restau_card";
-@import "./components/restau_heart";
 @import "./pages/menus_all";
 @import "./utils/animations";
 @import "./layout/footer";
