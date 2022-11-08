@@ -308,11 +308,6 @@ body {
   width: 75vh;
   height: 75vh;
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  justify-content: flex-start;
-  align-items: stretch;
 }
 .loader-area {
   position: absolute;
@@ -323,6 +318,16 @@ body {
   background-color: transparent;
   transform-origin: 15% 60%;
   animation: flip 2.1s ease-in-out infinite;
+}
+@media screen and (min-width: 768px) {
+  .loader-area {
+    right: 15vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .loader-area {
+    right: 0;
+  }
 }
 .loader-sides {
   position: absolute;
@@ -420,12 +425,13 @@ body {
   animation: bubble 1.6s ease-in-out 1s infinite;
 }
 .loader-text {
-  width: 100vw;
+  width: 75%;
   text-align: center;
   font-size: 4vh;
-  color: #333;
+  color: #222;
   opacity: 0.75;
   animation: pulse 1.5s linear infinite;
+  font-size: 18px;
 }
 
 .header {

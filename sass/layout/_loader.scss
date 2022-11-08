@@ -16,13 +16,18 @@
     width: 75vh;
     height: 75vh;
     overflow: hidden;
-    @include flex-disp();
   }
 
   &-area {
     position: absolute;
     bottom: 0;
     right: 25vw;
+    @media screen and (min-width: 768px) {
+      right: 15vw;
+    }
+    @media screen and (min-width: 992px) {
+      right: 0;
+    }
     width: 50%;
     height: 50%;
     background-color: transparent;
@@ -137,11 +142,12 @@
   }
 
   &-text {
-    width: 100vw;
+    width: 75%;
     text-align: center;
     font-size: 4vh;
-    color: #333;
+    color: #222;
     opacity: 0.75;
     animation: pulse 1.5s linear infinite;
+    font-size: 18px;
   }
 }
