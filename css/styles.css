@@ -326,7 +326,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .loader-area {
-    right: 0;
+    right: 2vw;
   }
 }
 .loader-sides {
