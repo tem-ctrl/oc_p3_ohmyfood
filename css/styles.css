@@ -37,12 +37,6 @@ body {
   color: #7e7e7e;
 }
 
-.loader-inner {
-  font-family: "Shrikhand", "sans-serif";
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .location {
   font-size: 14px;
   font-weight: bold;
@@ -141,6 +135,8 @@ body {
 
 .menu-name {
   font-family: "Shrikhand", "sans-serif";
+  font-size: 26px;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .menu-name {

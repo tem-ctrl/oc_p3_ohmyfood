@@ -27,15 +27,6 @@ body {
 
 // Layout
 
-// Loader
-.loader {
-  &-inner {
-    @include font-secondary;
-    font-size: 48px;
-    font-weight: bold;
-  }
-}
-
 // Location
 .location {
   font-size: 14px;
@@ -165,6 +156,8 @@ body {
 .menu {
   &-name {
     @include font-secondary;
+    font-size: 26px;
+    font-weight: 600;
     @media screen and (min-width: 768px) {
       font-size: 30px;
     }
