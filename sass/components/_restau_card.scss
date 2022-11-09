@@ -5,6 +5,7 @@
     @include flex-disp($direction: column);
     border-radius: 20px;
     box-shadow: 0 8px 16px 0px adjust-gray(-39);
+    // flex-grow: 1;
   }
 
   &-img {
@@ -15,7 +16,7 @@
 
   &-new {
     padding: 5px 12px;
-    background-color: #99e2d0;
+    background-color: $color-tertiary;
     position: absolute;
     width: fit-content;
     top: 15px;

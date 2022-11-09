@@ -9,26 +9,30 @@
 
   @media screen and (min-width: 768px) and (max-width: 991px) {
     &-cards {
-      @include flex-disp($direction: row, $gap: 30px, $justify-content: space-between);
+      @include flex-disp(
+        $direction: row,
+        $gap: 30px,
+        $justify-content: space-between
+      );
       flex-wrap: wrap;
       padding: 30px 0;
     }
 
     &-title {
-      @include center-title
+      @include center-title;
     }
   }
 
   @media screen and (min-width: 992px) {
-    padding-left: $desktop-margin;
-    padding-right: $desktop-margin;
+    @include equal-padding($desktop-margin);
+
     &-cards {
-    flex-direction: row;
-    padding: 30px 0;
+      flex-direction: row;
+      padding: 30px 0;
     }
 
     &-title {
-      @include center-title
+      @include center-title;
     }
   }
 }
