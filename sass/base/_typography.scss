@@ -15,7 +15,7 @@ body {
   font-size: 16px;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: adjust-gray(-194);
 }
@@ -24,14 +24,21 @@ body {
   color: adjust-gray(-121);
 }
 
-
 // Layout
 
+// Loader
+.loader {
+  &-text {
+    text-align: center;
+    font-size: 3vh;
+    color: #222;
+  }
+}
 // Location
 .location {
   font-size: 14px;
   font-weight: bold;
-  color:  adjust-gray($ad: -149);
+  color: adjust-gray($ad: -149);
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -45,7 +52,7 @@ body {
   &-text {
     font-size: 18px;
     font-weight: 300;
-    color:  adjust-gray($ad: -149);
+    color: adjust-gray($ad: -149);
   }
 
   @media screen and (min-width: 768px) {
@@ -150,7 +157,6 @@ body {
   }
 }
 
- 
 // Pages
 
 .menu {
@@ -184,7 +190,8 @@ body {
     font-weight: 350;
   }
 
-  &-text, &-name {
+  &-text,
+  &-name {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -200,4 +207,3 @@ body {
     }
   }
 }
-

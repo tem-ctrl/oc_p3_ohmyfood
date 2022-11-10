@@ -19,8 +19,7 @@
 
   &-icon {
     margin-right: 12px;
-    width: 12px;
-    height: 12px;
+    @include dimensions(12px);
   }
 
   @media screen and (min-width: 768px) and (max-width: 991px) {

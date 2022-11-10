@@ -37,6 +37,12 @@ body {
   color: #7e7e7e;
 }
 
+.loader-text {
+  text-align: center;
+  font-size: 3vh;
+  color: #222;
+}
+
 .location {
   font-size: 14px;
   font-weight: bold;
@@ -212,6 +218,7 @@ body {
   align-items: stretch;
   border-radius: 20px;
   box-shadow: 0 8px 16px 0px #d0d0d0;
+  height: 100%;
 }
 .restau-img {
   width: 100%;
@@ -282,8 +289,8 @@ body {
 .loader {
   background-color: #f7f7f7;
   z-index: 100;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   overflow: hidden;
   position: fixed;
   transform: translateY(-100vh);
@@ -418,12 +425,13 @@ body {
 }
 .loader-text {
   width: 75%;
-  text-align: center;
-  font-size: 4vh;
-  color: #222;
   opacity: 0.75;
   animation: pulse 1.5s linear infinite;
-  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .loader-text br {
+    display: none;
+  }
 }
 
 .header {
@@ -532,9 +540,9 @@ body {
   gap: 24px;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 10px 0 38px;
   width: 100%;
   height: 100%;
+  padding: 0 10px 0 38px;
   background-color: #f7f7f7;
   border-radius: 25px;
   box-shadow: 0 4px 12px 0px #dedede;
