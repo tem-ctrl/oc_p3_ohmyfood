@@ -304,14 +304,14 @@ body {
   position: relative;
   margin: 0 auto;
   top: 0;
-  width: 75vh;
-  height: 75vh;
+  width: 65vh;
+  height: 65vh;
   overflow: hidden;
 }
 .loader-area {
   position: absolute;
   bottom: 0;
-  right: 25vw;
+  right: 10%;
   width: 50%;
   height: 50%;
   background-color: transparent;

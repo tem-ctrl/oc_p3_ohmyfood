@@ -12,14 +12,14 @@
     position: relative;
     margin: 0 auto;
     top: 0;
-    @include dimensions(75vh);
+    @include dimensions(65vh);
     overflow: hidden;
   }
 
   &-area {
     position: absolute;
     bottom: 0;
-    right: 25vw;
+    right: 10%;
     @media screen and (min-width: 768px) {
       right: 15vw;
     }
