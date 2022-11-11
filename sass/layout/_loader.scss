@@ -20,12 +20,7 @@
     position: absolute;
     bottom: 0;
     right: 10%;
-    @media screen and (min-width: 768px) {
-      right: 15vw;
-    }
-    @media screen and (min-width: 992px) {
-      right: 2vw;
-    }
+    margin: auto;
     @include dimensions(50%);
     background-color: transparent;
     transform-origin: 15% 60%;
