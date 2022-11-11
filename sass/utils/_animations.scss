@@ -126,20 +126,3 @@
     transform: rotate(0deg);
   }
 }
-
-@keyframes bubble {
-  0% {
-    transform: scale(0.15, 0.15);
-    top: 80%;
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1, 1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.33, 0.33);
-    top: 60%;
-    opacity: 0;
-  }
-}

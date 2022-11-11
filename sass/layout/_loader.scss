@@ -6,29 +6,25 @@
   position: fixed;
   transform: translateY(-100vh);
   animation: vanish 3s;
-  @include flex-disp(column, center, center, 0);
+  @include flex-disp(column, flex-end, center, 0);
 
   &-inner {
-    position: relative;
-    margin: 0 auto;
-    top: 0;
-    @include dimensions(65vh);
-    overflow: hidden;
+    @include dimensions(75vh);
+    @include flex-disp(column, flex-end, center, 0);
   }
 
   &-area {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    margin: auto;
-    @include dimensions(50%);
+    position: relative;
+    left: 10%;
+    @include flex-disp(column, center, center, 0);
+    @include dimensions(30%);
     background-color: transparent;
     transform-origin: 15% 60%;
     animation: flip 2.1s ease-in-out infinite;
   }
 
   &-sides {
-    position: absolute;
+    position: relative;
     @include dimensions(100%);
     transform-origin: 15% 60%;
     animation: switch-side 2.1s ease-in-out infinite;
@@ -76,57 +72,11 @@
     }
   }
 
-  &-bubble {
-    position: absolute;
-    border-radius: 100%;
-    box-shadow: 0 0 0.25vh #4d4d4d;
-    opacity: 0;
-
-    &-1 {
-      margin-top: 2.5vh;
-      left: 58%;
-      @include dimensions(2.5vh);
-      background-color: #454545;
-      animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite;
-    }
-
-    &-2 {
-      margin-top: 3vh;
-      left: 52%;
-      @include dimensions(2vh);
-      background-color: #3d3d3d;
-      animation: bubble 2s ease-in-out 0.35s infinite;
-    }
-
-    &-3 {
-      margin-top: 1.8vh;
-      left: 50%;
-      @include dimensions(1.5vh);
-      background-color: #333;
-      animation: bubble 1.5s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
-    }
-
-    &-4 {
-      margin-top: 2.7vh;
-      left: 56%;
-      @include dimensions(1.2vh);
-      background-color: #2b2b2b;
-      animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
-    }
-
-    &-5 {
-      margin-top: 2.7vh;
-      left: 63%;
-      @include dimensions(1.1vh);
-      background-color: #242424;
-      animation: bubble 1.6s ease-in-out 1s infinite;
-    }
-  }
-
   &-text {
     width: 75%;
     opacity: 0.75;
     animation: pulse 1.5s linear infinite;
+    margin-bottom: 10vh;
     @media screen and (min-width: 768px) {
       & br {
         display: none;
