@@ -295,6 +295,7 @@ body {
   position: fixed;
   transform: translateY(-100vh);
   animation: vanish 3s;
+  padding-bottom: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -374,7 +375,6 @@ body {
   width: 75%;
   opacity: 0.75;
   animation: pulse 1.5s linear infinite;
-  padding-bottom: 10vh;
 }
 @media screen and (min-width: 768px) {
   .loader-text br {
