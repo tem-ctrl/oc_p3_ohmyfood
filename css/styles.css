@@ -295,10 +295,9 @@ body {
   position: fixed;
   transform: translateY(-100vh);
   animation: vanish 3s;
-  padding-bottom: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 .loader-inner {
