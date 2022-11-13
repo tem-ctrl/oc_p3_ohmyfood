@@ -6,7 +6,7 @@
   position: fixed;
   transform: translateY(-100vh);
   animation: vanish 3s;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   @include flex-disp(column, flex-end, center, 0);
 
   &-inner {
