@@ -802,7 +802,7 @@ body {
 }
 @keyframes jump {
   0% {
-    top: 24;
+    top: 24px;
     transform: rotateX(85deg);
   }
   25% {
