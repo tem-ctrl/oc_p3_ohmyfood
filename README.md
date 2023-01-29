@@ -2,6 +2,13 @@
 
 <a href="https://tem-ctrl.github.io/oc_p3_ohmyfood/" target="_blank">Visiter le site</a>
 
+# Compétences évaluées
+- Mettre en place une structure de navigation pour un site web
+- Assurer la cohérence graphique d'un site web
+- Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+- Mettre en œuvre des effets CSS graphiques avancés
+- Mettre en place son environnement Front-End
+
 # Scénario
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
 
