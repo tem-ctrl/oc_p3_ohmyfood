@@ -40,6 +40,6 @@ Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer,
 Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps.
 Voici <a href="assets/DW-P3-Brief-Ohmyfood.pdf">le brief</a> que vous établissez avec le CTO, Paul.
 
-De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie <a href="https://course.oc-static.com/projects/DW_P3/Maquette+Ohmyfood.zip">les maquettes</a> du site.
+De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie <a href="assets/Maquette-Ohmyfood.zip">les maquettes</a> du site.
 
 <figure><img src="./images/maquette/Maquettes Ohmyfood.jpg" alt="Aperçu des maquettes Ohmyfood"></figure>
