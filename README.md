@@ -38,7 +38,7 @@ J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en lign
 Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
 
 Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps.
-Voici <a href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf">le brief</a> que vous établissez avec le CTO, Paul.
+Voici <a href="assets/DW-P3-Brief-Ohmyfood.pdf">le brief</a> que vous établissez avec le CTO, Paul.
 
 De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie <a href="https://course.oc-static.com/projects/DW_P3/Maquette+Ohmyfood.zip">les maquettes</a> du site.
 
